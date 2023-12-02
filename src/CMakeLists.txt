@@ -20,11 +20,38 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(spdlog)
 
-add_executable(locator "main.cpp" "main.h" "Zone.cpp" "Subscriber.cpp" "Subscriber.h" "Zone.h"  "Triggers.h" "Triggers.cpp"  "Locator.cpp" "Locator.h" "Logger.cpp" "Logger.h")
+add_executable(locator 
+    "main.cpp"
+    "Zone.cpp" 
+    "Subscriber.cpp" 
+    "Zone.h" 
+    "Subscriber.h" 
+    "Locator.cpp" 
+    "Locator.h" 
+    "Logger.cpp" 
+    "Logger.h" 
+    "ProximityTrigger.h" 
+    "ProximityTrigger.cpp" 
+    "ZoneTrigger.h" 
+    "ZoneTrigger.cpp"
+)
 target_link_libraries(locator PRIVATE nlohmann_json::nlohmann_json)
 target_link_libraries(locator PRIVATE spdlog::spdlog)
 
-add_executable(test_locator "unitTests.cpp" "Zone.cpp" "Subscriber.cpp" "Zone.h"  "Triggers.h" "Triggers.cpp"  "Locator.cpp" "Locator.h" "Logger.cpp" "Logger.h")
+add_executable(test_locator 
+    "unitTests.cpp" 
+    "Zone.cpp" 
+    "Subscriber.cpp" 
+    "Zone.h" 
+    "Locator.cpp" 
+    "Locator.h" 
+    "Logger.cpp" 
+    "Logger.h" 
+    "ProximityTrigger.h" 
+    "ProximityTrigger.cpp" 
+    "ZoneTrigger.h" 
+    "ZoneTrigger.cpp"
+)
 target_link_libraries(test_locator PRIVATE gtest_main nlohmann_json::nlohmann_json)
 target_link_libraries(test_locator PRIVATE gtest_main spdlog::spdlog)
 

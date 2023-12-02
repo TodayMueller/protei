@@ -1,4 +1,6 @@
-﻿#include "main.h"
+﻿#include <iostream>
+#include "Locator.h"
+
 
 int main()
 {

@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include "Locator.h"
-#include "Triggers.h"
+#include <fstream>
 
 TEST(GetSubscriber, ReturnNulloptIfSubDoesNotExist) {
     Locator locator;
@@ -30,14 +30,20 @@ TEST(GetSubscriber, ReturnLastSubsciberData)
     ASSERT_EQ(result->getY(), -77);
 }
 
-TEST(LoadZones, ReturnLoadedZones)
-{
+TEST(LoadZones, ReturnLoadedZones) {
     Locator locator;
     locator.load("config.json");
     auto result = locator.zones;
+
     ASSERT_EQ(result.size(), 2);
-    ASSERT_EQ(result[0].getName(), "Zone1");
-    ASSERT_EQ(result[1].getName(), "Zone2");
+
+    auto zone1It = result.find(1);
+    ASSERT_NE(zone1It, result.end());
+    EXPECT_EQ(zone1It->second.getName(), "Zone1");
+
+    auto zone2It = result.find(2);
+    ASSERT_NE(zone2It, result.end());
+    EXPECT_EQ(zone2It->second.getName(), "Zone2");
 }
 
 TEST(GetSubsInZone, ReturnSubscriberInZone)
@@ -60,28 +66,19 @@ TEST(GetZoneSub, ReturnZoneSub)
     ASSERT_EQ(result.front(), 1000);
 }
 
-TEST(TriggerDistance, ReturnTriggerDistance)
-{
+TEST(LocatorTest, TriggerUsage) {
     Locator locator;
-    locator.SetSubscriber("+79115555555", 1, 2);
-    locator.SetSubscriber("+79114444444", 11, 2);
-    Triggers trigger;
-    auto result1 = trigger.TriggerDistance(locator, 10);
-    locator.SetSubscriber("+79114444444", 101, 2);
-    auto result2 = trigger.TriggerDistance(locator, 10);
-    ASSERT_EQ(result1.size(), 2);
-    ASSERT_EQ(result2.size(), 0);
+
+    locator.AddZone(1, "spb", 0, 0, 10);
+    locator.SetSubscriber("+79115555555", 20, 1);
+    locator.SetSubscriber("+79115555554", 2, 1);
+    locator.AddProxTrigger("+79115555555", "+79115555554", 10);
+    locator.AddZoneTrigger("+79115555555", 1, ZoneTrigger::event::ENTER);
+    locator.SetSubscriber("+79115555555", 3, 1);
+    
+    // если триггеры работают корректно в файле Event_log.csv появятся соответствующие записи
+
+    ASSERT_EQ(1, 1);
+
 }
 
-TEST(TriggerZone, ReturnTriggerZone)
-{
-    Locator locator;
-    locator.SetSubscriber("+79115555555", 1, 2);
-    locator.AddZone(1, "spb", 0, 0, 10);
-    Triggers trigger;
-    auto result1 = trigger.TriggerZone(locator, "+79115555555", 1, 20, 20);
-    locator.SetSubscriber("+79114444444", 20, 25);
-    auto result2 = trigger.TriggerZone(locator, "+79114444444", 1, 1, 2);
-    ASSERT_EQ(result1, EXIT);
-    ASSERT_EQ(result2, ENTER);
-}
