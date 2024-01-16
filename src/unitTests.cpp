@@ -75,8 +75,6 @@ TEST(LocatorTest, TriggerUsage) {
     locator.AddProxTrigger("+79115555555", "+79115555554", 10);
     locator.AddZoneTrigger("+79115555555", 1, ZoneTrigger::event::ENTER);
     locator.SetSubscriber("+79115555555", 3, 1);
-    
-    // если триггеры работают корректно в файле Event_log.csv появятся соответствующие записи
 
     ASSERT_EQ(1, 1);
 

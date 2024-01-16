@@ -1,4 +1,4 @@
-﻿cmake_minimum_required(VERSION 3.11)
+﻿cmake_minimum_required(VERSION 3.8)
 project(locator LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -20,7 +20,14 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(spdlog)
 
-add_executable(locator 
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.json ${CMAKE_CURRENT_BINARY_DIR}/config.json COPYONLY)
+
+set(SOURCES
+    ${SOURCES}
+    ${CMAKE_CURRENT_BINARY_DIR}/config.json
+)
+
+add_executable(locator ${SOURCES}
     "main.cpp"
     "Zone.cpp" 
     "Subscriber.cpp" 
@@ -38,7 +45,7 @@ add_executable(locator
 target_link_libraries(locator PRIVATE nlohmann_json::nlohmann_json)
 target_link_libraries(locator PRIVATE spdlog::spdlog)
 
-add_executable(test_locator 
+add_executable(test_locator ${SOURCES}
     "unitTests.cpp" 
     "Zone.cpp" 
     "Subscriber.cpp" 
