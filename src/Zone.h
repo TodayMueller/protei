@@ -3,11 +3,12 @@
 #include <string>
 #include <nlohmann/json.hpp>
 
-class Zone {
+class Zone
+{
 public:
-
 	Zone();
-	Zone(const nlohmann::json& j);
+	Zone(const nlohmann::json &j);
+	Zone(int newId, const std::string &newName, int newX, int newY, int newRadius);
 
 	int getId() const;
 	std::string getName() const;
@@ -15,16 +16,8 @@ public:
 	int getY() const;
 	int getRadius() const;
 
-	void setId(int newId);
-	void setName(const std::string& newName);
-	void setX(int newX);
-	void setY(int newY);
-	void setRadius(int newRadius);
-
 private:
-
 	int id;
 	std::string name;
 	int x, y, radius;
-
 };

@@ -3,9 +3,9 @@
 #include <iostream>
 #include <string>
 
-class ZoneTrigger {
+class ZoneTrigger
+{
 public:
-
     enum class event
     {
         ENTER,
@@ -18,11 +18,11 @@ public:
     ZoneTrigger() = default;
 
     int getID() const;
-    std::string getSubID() const;
+    const std::string &getSubID() const;
     int getZoneID() const;
     event getEvent() const;
 
-    void setSubID(const std::string& sub_id);
+    void setSubID(const std::string &sub_id);
     void setZoneID(int zone_id);
     void setEvent(event event0);
 
@@ -31,5 +31,4 @@ private:
     std::string subscriber_id;
     int zone_id;
     event event0;
-
 };

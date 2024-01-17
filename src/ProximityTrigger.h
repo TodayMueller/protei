@@ -2,7 +2,8 @@
 
 #include <string>
 
-class ProximityTrigger {
+class ProximityTrigger
+{
 public:
     ProximityTrigger(std::string subscriber1_id, std::string subscriber2_id, int distance);
     ProximityTrigger() = default;
@@ -12,8 +13,8 @@ public:
     std::string getSubscriber2ID() const;
     int getDistance() const;
 
-    void setSubscriber1ID(const std::string& sub1_id);
-    void setSubscriber2ID(const std::string& sub2_id);
+    void setSubscriber1ID(const std::string &sub1_id);
+    void setSubscriber2ID(const std::string &sub2_id);
     void setDistance(int new_distance);
 
 private:

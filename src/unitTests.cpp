@@ -2,12 +2,13 @@
 #include "Locator.h"
 #include <fstream>
 
-TEST(GetSubscriber, ReturnNulloptIfSubDoesNotExist) {
+
+TEST(GetSubscriber, ReturnNulloptIfSubDoesNotExist)
+{
     Locator locator;
     auto result = locator.GetSubscriber("unknown");
     ASSERT_FALSE(result.has_value());
 }
-
 
 TEST(GetSubscriber, ReturnSubsciberDataIfSuscriberInDb)
 {
@@ -30,7 +31,8 @@ TEST(GetSubscriber, ReturnLastSubsciberData)
     ASSERT_EQ(result->getY(), -77);
 }
 
-TEST(LoadZones, ReturnLoadedZones) {
+TEST(LoadZones, ReturnLoadedZones)
+{
     Locator locator;
     locator.load("config.json");
     auto result = locator.zones;
@@ -66,17 +68,22 @@ TEST(GetZoneSub, ReturnZoneSub)
     ASSERT_EQ(result.front(), 1000);
 }
 
-TEST(LocatorTest, TriggerUsage) {
+TEST(LocatorTest, TriggerUsage)
+{
     Locator locator;
 
-    locator.AddZone(1, "spb", 0, 0, 10);
-    locator.SetSubscriber("+79115555555", 20, 1);
-    locator.SetSubscriber("+79115555554", 2, 1);
-    locator.AddProxTrigger("+79115555555", "+79115555554", 10);
     locator.AddZoneTrigger("+79115555555", 1, ZoneTrigger::event::ENTER);
-    locator.SetSubscriber("+79115555555", 3, 1);
+    locator.AddProxTrigger("+79115555555", "+79115555554", 10);
+    locator.AddZone(1, "spb", 0, 0, 10);
+    locator.SetSubscriber("+79115555555", 2, 1);
+    locator.SetSubscriber("+79115555554", 3, 4);
+    locator.SetSubscriber("+79115555555", 30, 1);
+    locator.SetSubscriber("+79115555555", 4, 1);
+    locator.SetSubscriber("+79115555555", 2, 2);
 
-    ASSERT_EQ(1, 1);
+    auto proxSubID = locator.proxTriggers.begin()->second.getSubscriber1ID();
+    auto zoneSubID = locator.zoneTriggers.begin()->second.getSubID();
 
+    ASSERT_EQ(proxSubID, "+79115555555");
+    ASSERT_EQ(zoneSubID, "+79115555555");
 }
-
