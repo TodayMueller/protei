@@ -1,23 +1,23 @@
 #pragma once
 
-#include <string>
 #include <nlohmann/json.hpp>
+#include <string>
 
-class Zone
-{
+class Zone {
 public:
-	Zone();
-	Zone(const nlohmann::json &j);
-	Zone(int newId, const std::string &newName, int newX, int newY, int newRadius);
+  Zone();
+  Zone(const nlohmann::json &j);
+  Zone(int newId, const std::string &newName, int newX, int newY,
+       int newRadius);
 
-	int getId() const;
-	std::string getName() const;
-	int getX() const;
-	int getY() const;
-	int getRadius() const;
+  int getId() const;
+  std::string getName() const;
+  int getX() const;
+  int getY() const;
+  int getRadius() const;
 
 private:
-	int id;
-	std::string name;
-	int x, y, radius;
+  int id;
+  std::string name;
+  int x, y, radius;
 };

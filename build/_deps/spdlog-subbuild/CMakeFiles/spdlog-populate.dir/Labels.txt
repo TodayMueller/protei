@@ -1,0 +1,14 @@
+# Target labels
+ spdlog-populate
+# Source files and their labels
+/home/daniil/Work/protei/build/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate
+/home/daniil/Work/protei/build/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate.rule
+/home/daniil/Work/protei/build/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate-complete.rule
+/home/daniil/Work/protei/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-build.rule
+/home/daniil/Work/protei/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-configure.rule
+/home/daniil/Work/protei/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-download.rule
+/home/daniil/Work/protei/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-install.rule
+/home/daniil/Work/protei/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-mkdir.rule
+/home/daniil/Work/protei/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-patch.rule
+/home/daniil/Work/protei/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-test.rule
+/home/daniil/Work/protei/build/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-update.rule

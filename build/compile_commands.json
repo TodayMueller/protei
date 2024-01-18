@@ -1,0 +1,127 @@
+[
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=gnu++17 -o CMakeFiles/locator.dir/main.cpp.o -c /home/daniil/Work/protei/src/main.cpp",
+  "file": "/home/daniil/Work/protei/src/main.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=gnu++17 -o CMakeFiles/locator.dir/Zone.cpp.o -c /home/daniil/Work/protei/src/Zone.cpp",
+  "file": "/home/daniil/Work/protei/src/Zone.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=gnu++17 -o CMakeFiles/locator.dir/Subscriber.cpp.o -c /home/daniil/Work/protei/src/Subscriber.cpp",
+  "file": "/home/daniil/Work/protei/src/Subscriber.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=gnu++17 -o CMakeFiles/locator.dir/Locator.cpp.o -c /home/daniil/Work/protei/src/Locator.cpp",
+  "file": "/home/daniil/Work/protei/src/Locator.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=gnu++17 -o CMakeFiles/locator.dir/Logger.cpp.o -c /home/daniil/Work/protei/src/Logger.cpp",
+  "file": "/home/daniil/Work/protei/src/Logger.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=gnu++17 -o CMakeFiles/locator.dir/ProximityTrigger.cpp.o -c /home/daniil/Work/protei/src/ProximityTrigger.cpp",
+  "file": "/home/daniil/Work/protei/src/ProximityTrigger.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=gnu++17 -o CMakeFiles/locator.dir/ZoneTrigger.cpp.o -c /home/daniil/Work/protei/src/ZoneTrigger.cpp",
+  "file": "/home/daniil/Work/protei/src/ZoneTrigger.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest -g -std=gnu++17 -o CMakeFiles/test_locator.dir/unitTests.cpp.o -c /home/daniil/Work/protei/src/unitTests.cpp",
+  "file": "/home/daniil/Work/protei/src/unitTests.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest -g -std=gnu++17 -o CMakeFiles/test_locator.dir/Zone.cpp.o -c /home/daniil/Work/protei/src/Zone.cpp",
+  "file": "/home/daniil/Work/protei/src/Zone.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest -g -std=gnu++17 -o CMakeFiles/test_locator.dir/Subscriber.cpp.o -c /home/daniil/Work/protei/src/Subscriber.cpp",
+  "file": "/home/daniil/Work/protei/src/Subscriber.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest -g -std=gnu++17 -o CMakeFiles/test_locator.dir/Locator.cpp.o -c /home/daniil/Work/protei/src/Locator.cpp",
+  "file": "/home/daniil/Work/protei/src/Locator.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest -g -std=gnu++17 -o CMakeFiles/test_locator.dir/Logger.cpp.o -c /home/daniil/Work/protei/src/Logger.cpp",
+  "file": "/home/daniil/Work/protei/src/Logger.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest -g -std=gnu++17 -o CMakeFiles/test_locator.dir/ProximityTrigger.cpp.o -c /home/daniil/Work/protei/src/ProximityTrigger.cpp",
+  "file": "/home/daniil/Work/protei/src/ProximityTrigger.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/json-src/include -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest -g -std=gnu++17 -o CMakeFiles/test_locator.dir/ZoneTrigger.cpp.o -c /home/daniil/Work/protei/src/ZoneTrigger.cpp",
+  "file": "/home/daniil/Work/protei/src/ZoneTrigger.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/g++  -I/home/daniil/Work/protei/build/_deps/googletest-src/googlemock/include -I/home/daniil/Work/protei/build/_deps/googletest-src/googlemock -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/daniil/Work/protei/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/home/daniil/Work/protei/build/_deps/googletest-src/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/daniil/Work/protei/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/g++  -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googlemock/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googlemock -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/daniil/Work/protei/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/home/daniil/Work/protei/build/_deps/googletest-src/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/daniil/Work/protei/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/g++  -I/home/daniil/Work/protei/build/_deps/googletest-src/googletest/include -I/home/daniil/Work/protei/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/daniil/Work/protei/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/home/daniil/Work/protei/build/_deps/googletest-src/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/daniil/Work/protei/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/g++  -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest/include -isystem /home/daniil/Work/protei/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/daniil/Work/protei/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/home/daniil/Work/protei/build/_deps/googletest-src/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/daniil/Work/protei/build/_deps/spdlog-build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=c++17 -o CMakeFiles/spdlog.dir/src/spdlog.cpp.o -c /home/daniil/Work/protei/build/_deps/spdlog-src/src/spdlog.cpp",
+  "file": "/home/daniil/Work/protei/build/_deps/spdlog-src/src/spdlog.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build/_deps/spdlog-build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=c++17 -o CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o -c /home/daniil/Work/protei/build/_deps/spdlog-src/src/stdout_sinks.cpp",
+  "file": "/home/daniil/Work/protei/build/_deps/spdlog-src/src/stdout_sinks.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build/_deps/spdlog-build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=c++17 -o CMakeFiles/spdlog.dir/src/color_sinks.cpp.o -c /home/daniil/Work/protei/build/_deps/spdlog-src/src/color_sinks.cpp",
+  "file": "/home/daniil/Work/protei/build/_deps/spdlog-src/src/color_sinks.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build/_deps/spdlog-build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=c++17 -o CMakeFiles/spdlog.dir/src/file_sinks.cpp.o -c /home/daniil/Work/protei/build/_deps/spdlog-src/src/file_sinks.cpp",
+  "file": "/home/daniil/Work/protei/build/_deps/spdlog-src/src/file_sinks.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build/_deps/spdlog-build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=c++17 -o CMakeFiles/spdlog.dir/src/async.cpp.o -c /home/daniil/Work/protei/build/_deps/spdlog-src/src/async.cpp",
+  "file": "/home/daniil/Work/protei/build/_deps/spdlog-src/src/async.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build/_deps/spdlog-build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=c++17 -o CMakeFiles/spdlog.dir/src/cfg.cpp.o -c /home/daniil/Work/protei/build/_deps/spdlog-src/src/cfg.cpp",
+  "file": "/home/daniil/Work/protei/build/_deps/spdlog-src/src/cfg.cpp"
+},
+{
+  "directory": "/home/daniil/Work/protei/build/_deps/spdlog-build",
+  "command": "/usr/bin/g++ -DSPDLOG_COMPILED_LIB -I/home/daniil/Work/protei/build/_deps/spdlog-src/include -g -std=c++17 -o CMakeFiles/spdlog.dir/src/fmt.cpp.o -c /home/daniil/Work/protei/build/_deps/spdlog-src/src/fmt.cpp",
+  "file": "/home/daniil/Work/protei/build/_deps/spdlog-src/src/fmt.cpp"
+}
+]
