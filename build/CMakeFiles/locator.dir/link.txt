@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/locator.dir/main.cpp.o CMakeFiles/locator.dir/Zone.cpp.o CMakeFiles/locator.dir/Subscriber.cpp.o CMakeFiles/locator.dir/Locator.cpp.o CMakeFiles/locator.dir/Logger.cpp.o CMakeFiles/locator.dir/ProximityTrigger.cpp.o CMakeFiles/locator.dir/ZoneTrigger.cpp.o -o locator  _deps/spdlog-build/libspdlogd.a 

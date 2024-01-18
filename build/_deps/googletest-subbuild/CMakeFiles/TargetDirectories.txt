@@ -1,3 +1,0 @@
-/home/daniil/Work/protei/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
-/home/daniil/Work/protei/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
-/home/daniil/Work/protei/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
